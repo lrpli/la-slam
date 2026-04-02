@@ -265,6 +265,12 @@ h1, h2, h3, h4, h5 { font-family: var(--font-display); }
   margin-bottom: 28px;
   box-shadow: var(--shadow-sm);
 }
+.hero-badge a {
+  font-weight: 600;
+  color: var(--accent);
+  transition: color 0.2s ease;
+}
+.hero-badge a:hover { color: var(--ink); }
 .hero-title {
   font-size: clamp(36px, 5.5vw, 64px);
   line-height: 1.08;
