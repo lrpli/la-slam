@@ -7,99 +7,176 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to main content</a>
+
+    <!-- Floating background shapes -->
+    <div class="bg-shapes" aria-hidden="true">
+      <div class="bg-shape bg-shape--1"></div>
+      <div class="bg-shape bg-shape--2"></div>
+      <div class="bg-shape bg-shape--3"></div>
+    </div>
+
     <header class="site-header">
       <div class="container header-shell">
         <div class="brand">
-          <div class="brand-mark">LS</div>
+          <div class="brand-mark">
+            <span>LA</span>
+          </div>
           <div class="brand-text">
             <h1>LA SLAM</h1>
             <span>Louisiana Youth Arts</span>
           </div>
         </div>
         <nav class="nav" aria-label="Primary">
-          <a href="index.html">Home</a>
+          <a href="index.html" class="nav-active">Home</a>
           <a href="about.html">About</a>
           <a href="programs.html">Programs</a>
           <a href="events.html">Events</a>
           <a href="contact.html">Contact</a>
         </nav>
-        <a class="cta" href="contact.html">Partner With Us</a>
+        <a class="cta cta--header" href="contact.html">
+          <span>Partner With Us</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10m0 0L9 4m4 4L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
       </div>
     </header>
 
     <main id="main">
-      <section class="container hero">
-        <div class="hero-card reveal">
-          <h2>We champion youth voices through spoken word, music, and community care.</h2>
-          <p>
+      <!-- Hero -->
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-badge reveal">Youth Arts Nonprofit &mdash; Est. 2016</div>
+          <h2 class="hero-title reveal">
+            We champion youth voices through
+            <span class="text-gradient">spoken word, music,</span>
+            and community care.
+          </h2>
+          <p class="hero-sub reveal">
             LA SLAM is a Louisiana-based nonprofit focused on empowering young people to
             create, perform, and lead. We build safe stages, build confidence, and help
             young artists turn their stories into impact.
           </p>
-          <div class="hero-stats">
-            <div class="stat">
-              <strong>2016</strong>
-              Founded by local artists and mentors.
-            </div>
-            <div class="stat">
-              <strong>30+ </strong>
-              Workshops each year across Acadiana.
-            </div>
-            <div class="stat">
-              <strong>500+ </strong>
-              Youth supported in creative expression.
-            </div>
+          <div class="hero-actions reveal">
+            <a class="cta cta--primary" href="programs.html">
+              <span>Explore Programs</span>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10m0 0L9 4m4 4L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a class="cta cta--outline" href="about.html">Learn Our Story</a>
           </div>
         </div>
-        <div class="glow-panel reveal">
-          <div class="panel-content">
-            <h3>Community-rooted. Artist-led. Youth-centered.</h3>
-            <p>
-              We connect young writers, performers, and activists with mentors and
-              resources, from after-school labs to citywide showcases.
-            </p>
-            <div class="tag-row">
-              <span class="tag">Spoken Word</span>
-              <span class="tag">Hip-Hop Arts</span>
-              <span class="tag">Mentorship</span>
-              <span class="tag">Creative Wellness</span>
-            </div>
-            <a class="cta" href="programs.html">Explore Programs</a>
+
+        <div class="container stats-bar reveal">
+          <div class="stat">
+            <strong class="stat-num" data-count="2016">2016</strong>
+            <span class="stat-label">Founded by local artists &amp; mentors</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <strong class="stat-num">30+</strong>
+            <span class="stat-label">Workshops each year across Acadiana</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <strong class="stat-num">500+</strong>
+            <span class="stat-label">Youth supported in creative expression</span>
           </div>
         </div>
       </section>
 
+      <!-- Marquee -->
+      <div class="marquee-wrap" aria-hidden="true">
+        <div class="marquee">
+          <span>Spoken Word</span>
+          <span class="marquee-dot"></span>
+          <span>Hip-Hop Arts</span>
+          <span class="marquee-dot"></span>
+          <span>Mentorship</span>
+          <span class="marquee-dot"></span>
+          <span>Creative Wellness</span>
+          <span class="marquee-dot"></span>
+          <span>Community Care</span>
+          <span class="marquee-dot"></span>
+          <span>Youth Leadership</span>
+          <span class="marquee-dot"></span>
+          <span>Spoken Word</span>
+          <span class="marquee-dot"></span>
+          <span>Hip-Hop Arts</span>
+          <span class="marquee-dot"></span>
+          <span>Mentorship</span>
+          <span class="marquee-dot"></span>
+          <span>Creative Wellness</span>
+          <span class="marquee-dot"></span>
+          <span>Community Care</span>
+          <span class="marquee-dot"></span>
+          <span>Youth Leadership</span>
+          <span class="marquee-dot"></span>
+        </div>
+      </div>
+
+      <!-- Mission Panel -->
       <section class="section container">
-        <h3 class="reveal">What We Deliver</h3>
+        <div class="mission-panel reveal">
+          <div class="mission-label">Our Approach</div>
+          <h3 class="mission-title">Community-rooted. Artist-led. Youth-centered.</h3>
+          <p class="mission-desc">
+            We connect young writers, performers, and activists with mentors and
+            resources &mdash; from after-school labs to citywide showcases.
+          </p>
+          <div class="tag-row">
+            <span class="tag">Spoken Word</span>
+            <span class="tag">Hip-Hop Arts</span>
+            <span class="tag">Mentorship</span>
+            <span class="tag">Creative Wellness</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- What We Deliver -->
+      <section class="section container">
+        <div class="section-header reveal">
+          <span class="section-label">Programs</span>
+          <h3>What We Deliver</h3>
+        </div>
         <div class="card-grid">
-          <article class="card reveal">
+          <article class="card reveal" style="--card-accent: #d97d54">
+            <div class="card-icon">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="12" stroke="currentColor" stroke-width="1.5"/><path d="M10 18V10l10 4-10 4z" fill="currentColor"/></svg>
+            </div>
             <h4>Creative Labs</h4>
             <p>
               Weekly labs build writing, rhythm, and stage presence with teaching artists
               and peer feedback.
             </p>
           </article>
-          <article class="card reveal">
+          <article class="card reveal" style="--card-accent: #5a7a6f">
+            <div class="card-icon">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="3" y="7" width="22" height="14" rx="3" stroke="currentColor" stroke-width="1.5"/><path d="M9 14h10M14 10v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
             <h4>Showcase Nights</h4>
             <p>
               Quarterly showcases amplify youth stories and celebrate family and community
               support.
             </p>
           </article>
-          <article class="card reveal">
+          <article class="card reveal" style="--card-accent: #f2b880">
+            <div class="card-icon">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M14 4l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1 3-6z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+            </div>
             <h4>Leadership Pathways</h4>
             <p>
               Youth leaders design workshops, mentor peers, and co-produce community events.
             </p>
           </article>
-          <article class="card reveal">
+          <article class="card reveal" style="--card-accent: #b9d6e4">
+            <div class="card-icon">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M14 24c5.523 0 10-4.477 10-10S19.523 4 14 4 4 8.477 4 14s4.477 10 10 10z" stroke="currentColor" stroke-width="1.5"/><path d="M10 14.5l3 3 5-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
             <h4>Wellness + Belonging</h4>
             <p>
               We center mental health, belonging, and accountability through creative care.
@@ -108,36 +185,57 @@
         </div>
       </section>
 
+      <!-- CTA Ribbon -->
       <section class="section container">
         <div class="ribbon reveal">
-          <h3>Ready to support the next generation of creators?</h3>
-          <p>
-            We collaborate with schools, libraries, and local partners across Louisiana.
-            Let's build a new stage together.
-          </p>
-          <a class="cta" href="contact.html">Start a Partnership</a>
+          <div class="ribbon-content">
+            <span class="ribbon-label">Get Involved</span>
+            <h3>Ready to support the next generation of creators?</h3>
+            <p>
+              We collaborate with schools, libraries, and local partners across Louisiana.
+              Let's build a new stage together.
+            </p>
+          </div>
+          <a class="cta cta--ribbon" href="contact.html">
+            <span>Start a Partnership</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10m0 0L9 4m4 4L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
         </div>
       </section>
     </main>
 
-    <footer class="footer container">
-      <div class="footer-top">
-        <div>
-          <strong>LA SLAM</strong>
-          <p>220 Whispering Meadows Rd, Broussard, LA 70518</p>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <div class="brand-mark brand-mark--sm">
+              <span>LA</span>
+            </div>
+            <div>
+              <strong>LA SLAM</strong>
+              <p>Community-powered youth arts nonprofit</p>
+            </div>
+          </div>
+          <div class="footer-cols">
+            <div class="footer-col">
+              <h5>Location</h5>
+              <p>220 Whispering Meadows Rd<br>Broussard, LA 70518</p>
+            </div>
+            <div class="footer-col">
+              <h5>Contact</h5>
+              <p><a href="mailto:info@laslam.us">info@laslam.us</a></p>
+              <p>EIN: 99-5125203</p>
+            </div>
+            <div class="footer-col">
+              <h5>Principal Officer</h5>
+              <p>Jeremy Pritchard</p>
+            </div>
+          </div>
         </div>
-        <div>
-          <p>Contact: <a href="mailto:info@laslam.us">info@laslam.us</a></p>
-          <p>EIN: 99-5125203</p>
+        <div class="footer-line">
+          <span>Doing business as LA SLAM</span>
+          <span>&copy; 2026 LA SLAM. All rights reserved.</span>
         </div>
-        <div>
-          <p>Principal Officer</p>
-          <p>Jeremy Pritchard</p>
-        </div>
-      </div>
-      <div class="footer-line">
-        <span>Doing business as LA SLAM</span>
-        <span>Community-powered youth arts nonprofit</span>
       </div>
     </footer>
 
